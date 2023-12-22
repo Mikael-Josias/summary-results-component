@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
 
+    <script src="./scripts/index.js" type="text/javascript" defer></script>
+
     <title>Results Summary Component</title>
 </head>
 <body>
@@ -23,35 +25,7 @@
         </div>
         <div class="summary-box">
             <h2 class="summary-box__title">Summary</h2>
-            <div class="status-wrapper">
-                <div class="status-box--red">
-                    <span class="status-box__name--red">
-                        <img src="./assets/icon-reaction.svg" alt="icone raio vermelho"/>
-                        Reaction
-                    </span>
-                    <span class="status-box__value"><b>80</b> / 100</span>
-                </div>
-                <div class="status-box--yellow">
-                    <span class="status-box__name--yellow">
-                        <img src="./assets/icon-memory.svg" alt="icone cerebro amarelo"/>
-                        Memory
-                    </span>
-                    <span class="status-box__value"><b>80</b> / 100</span>
-                </div>
-                <div class="status-box--green">
-                    <span class="status-box__name--green">
-                        <img src="./assets/icon-verbal.svg" alt="icone bolha verde"/>
-                        Verbal
-                    </span>
-                    <span class="status-box__value"><b>80</b> / 100</span>
-                </div>
-                <div class="status-box--blue">
-                    <span class="status-box__name--blue">
-                        <img src="./assets/icon-visual.svg" alt="icone olho azul"/>
-                        Visual
-                    </span>
-                    <span class="status-box__value"><b>80</b> / 100</span>
-                </div>
+            <div id="summaryWrapper" class="status-wrapper">
             </div>
             <div class="summary-box__button-bg">
                 <button class="summary-box__button">Continue</button>
