@@ -1,10 +1,8 @@
-let data;
 
 async function getSummaryData() {
     const response = await fetch('./scripts/data.json');
     const summary = await response.json();
-    data = summary;
-    data.forEach(e => {
+    summary.forEach(e => {
         buildSummaryHtml(e.category, e.score, e.icon, e.color);
     });
 }
