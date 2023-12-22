@@ -15,6 +15,10 @@
     --orangey-yellow: hsl(39, 100%, 56%);
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red-2: hsl(0, 100%, 67%, 0.1);
+    --orangey-yellow-2: hsl(39, 100%, 56%, 0.1);
+    --green-teal-2: hsl(166, 100%, 37%, 0.1);
+    --cobalt-blue-2: hsl(234, 85%, 45%, 0.1);
     /* GRADIENT */
     --light-slate-blue-bg: hsl(252, 100%, 67%);
     --light-royal-blue-bg: hsl(241, 81%, 54%);
@@ -57,6 +61,7 @@ body {
 }
 
 .score-box__title {
+    font-size: 1.2rem;
     color: var(--light-lavender);
     font-weight: 700;
 }
@@ -94,3 +99,91 @@ body {
     color: var(--light-lavender);
     text-align: center;
 }
+
+.summary-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.4rem;
+    padding: 1.5rem 2.4rem 2.5rem;
+    width: 50%;
+}
+
+.summary-box__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-gray-blue);
+}
+
+.status-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+}
+
+.status-box,
+.status-box--red,
+.status-box--yellow,
+.status-box--green,
+.status-box--blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-radius: .4rem;
+}
+
+.status-box--red {
+    background-color: var(--light-red-2);
+}
+
+.status-box--green {
+    background-color: var(--green-teal-2);
+}
+
+.status-box--yellow {
+    background-color: var(--orangey-yellow-2);
+}
+
+.status-box--blue {
+    background-color: var(--cobalt-blue-2);
+}
+
+.status-box__name,
+.status-box__name--red,
+.status-box__name--yellow,
+.status-box__name--green,
+.status-box__name--blue {
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.status-box__name--red {
+    color: var(--light-red);
+}
+
+.status-box__name--yellow {
+    color: var(--orangey-yellow);
+}
+
+.status-box__name--green {
+    color: var(--green-teal);
+}
+
+.status-box__name--blue {
+    color: var(--cobalt-blue);
+}
+
+.status-box__value {
+    color: var(--light-lavender);
+    font-weight: 700;
+}
+
+.status-box__value b {
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+
